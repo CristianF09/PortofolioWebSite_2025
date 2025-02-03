@@ -277,25 +277,94 @@ section {
   margin-bottom: 3rem;
 }
 
-.input-box {
+.contact-form{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 2.5rem; /* Increased gap between elements */
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.contact-form-title {
+  font-size: 2rem; /* Bigger title */
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #009dff, #ff00ff);
+  background-clip: text;
+  color: transparent;
+}
+contact-form-title hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background: linear-gradient(to right, #009dff, #ff00ff);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-input {
+  border-radius: 3rem;
+  border: 2px solid black;
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
+  width: 100%;
+  max-width: 400px;
+  transition: 0.3s ease-in-out;
+  padding-left: 4rem;
+}
+.contact-form textarea {
+  border-radius: 3rem;
+  border: 2px solid black;
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
+  width: 100%;
+  max-width: 400px;
+  transition: 0.3s ease-in-out;
+  padding-left: 4rem;
+  height: 150px;
+}
+.contact-input:focus,
+.contact-input:hover {
+  border: 2px solid #009dff;
+  outline: none;
+}
+.contact-form .btn {
+  padding:1rem 5rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.contact-form .btn:hover {
+  background-color: black;
+  color: white;
+}
+.contact-input i {
+  position: absolute;
+  font-size: 2rem;
+  top: 50%;
+  left: 31rem;
+  transform: translateY(-50%);
+  color: #009dff;
+}
+
+/* .input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2.5rem; 
   margin-top: 3rem;
 }
 
 .input-box input {
   border-radius: 3rem;
   border: 2px solid black;
-  padding: 1.5rem 3rem; /* Bigger padding */
-  font-size: 1.2rem; /* Larger text */
+  padding: 1.5rem 3rem; 
+  font-size: 1.2rem; 
   width: 100%;
-  max-width: 500px; /* Wider input */
+  max-width: 500px; 
   transition: 0.3s ease-in-out;
-  padding-left: 4rem; /* Space for icon */
+  padding-left: 4rem; 
 }
 
 .input {
@@ -305,18 +374,19 @@ section {
 
 .input i {
   position: absolute;
-  font-size: 2rem; /* Larger icon */
+  font-size: 2rem;
   top: 50%;
-  left: 31rem; /* More space from left edge */
+  left: 31rem; 
   transform: translateY(-50%);
   color: #009dff;
 }
 
 .input-box .btn {
-  padding: 1.5rem 4rem; /* Bigger button */
-  font-size: 1.5rem; /* Larger text */
+  padding: 1.5rem 4rem; 
+  font-size: 1.5rem; 
   margin-top: 2rem;
-}
+} */
+
 
 /* Footer */
 footer {

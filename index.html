@@ -144,21 +144,26 @@
     </section>
 
     <section id="contact" class="contact">
-      <div class="input-box">
-        <h2 class="section-title">Contact Me</h2>
-        
-        <div class="input">
-          <input type="text" placeholder="Name" />
-          <i class="fa-solid fa-user"></i>
-        </div>
-    
-        <div class="input">
-          <input type="email" placeholder="Email" />
-          <i class="fa-solid fa-envelope"></i>
-        </div>
-    
-        <button type="submit" class="btn">Submit</button>
+      <form action="https://api.web3forms.com/submit" method="POST"> class="contact-form">
+      <div class="contact-form-title">
+        <h2>Get in touch</h2>
+        <hr>
       </div>
+
+      <div class=" input">
+        <input type="hidden" name="access_key" value="beca408e-34fe-4156-aa89-39207321ab6b">
+        <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+        <i class="fa-solid fa-user"></i>
+
+        <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+
+        <textarea name="message" placeholder="Your Message" class="contact-input" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </div>
+      
     </section>
 
     <footer>
