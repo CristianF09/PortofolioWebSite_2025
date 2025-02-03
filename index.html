@@ -3,38 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio WebSite</title>
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet"
-    href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <header class="header">
       <a href="#" class="logo"><span>Cristian Florea</span></a>
 
       <ul class="nav-links">
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#experience">Experience</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#conctact">Conctact</a>
-        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
       <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-      <button class="visit-btn">Visit GitHub</button>
+      <a href="https://github.com/yourusername" class="visit-btn" target="_blank">Visit GitHub</a>
     </header>
 
     <section id="about" class="about">
       <div class="about-container">
-        <img src="profile2.png" alt="" />
+        <img src="profile2.png" alt="Profile Picture" />
 
         <div class="info-box">
           <div class="text">
@@ -43,12 +37,16 @@
             <h2>Full Stack Developer</h2>
           </div>
           <div class="btn-group">
-            <div class="btn">Download CV</div>
-            <div class="btn">Contact Me</div>
+            <a href="#" class="btn">Download CV</a>
+            <a href="#contact" class="btn">Contact Me</a>
           </div>
           <div class="social">
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -59,16 +57,16 @@
 
       <div class="experience-info">
         <div class="grid">
-          <div class="grip-card">
+          <div class="grid-card">
             <i class="fa-solid fa-code"></i>
-            <span>Fronted Developer</span>
+            <span>Frontend Developer</span>
             <h3>5 Years</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
               quod.
             </p>
           </div>
-          <div class="grip-card">
+          <div class="grid-card">
             <i class="fa-solid fa-file-code"></i>
             <span>Graphics Designer</span>
             <h3>2 Years</h3>
@@ -77,7 +75,7 @@
               quod.
             </p>
           </div>
-          <div class="grip-card">
+          <div class="grid-card">
             <i class="fa-solid fa-laptop"></i>
             <span>System Admin</span>
             <h3>3 Years</h3>
@@ -86,7 +84,7 @@
               quod.
             </p>
           </div>
-          <div class="grip-card">
+          <div class="grid-card">
             <i class="fa-solid fa-list"></i>
             <span>Manager</span>
             <h3>5 Years</h3>
@@ -96,91 +94,81 @@
             </p>
           </div>
         </div>
+        <img src="profile1.png" alt="Experience Image" />
       </div>
-
-      <img src="profile1.png" alt="" />
     </section>
 
     <section id="projects" class="projects">
-      <h2 class="section-title">Recent Projects</h2>
+      <h2 class="section-title">Projects</h2>
 
       <div class="projects-grid">
         <div class="project-card">
-          <img src="project1.png" alt="" />
+          <img src="project1.png" alt="Project 1" />
           <h3>Project 1</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
             quod.
           </p>
           <div class="btn-group">
-            <div class="btn">Live Demo</div>
-            <div class="btn">Github Repo</div>
+            <a href="#" class="btn">Live Demo</a>
+            <a href="#" class="btn">GitHub Repo</a>
           </div>
         </div>
 
         <div class="project-card">
-          <img src="project2.png" alt="" />
+          <img src="project2.png" alt="Project 2" />
           <h3>Project 2</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
             quod.
           </p>
           <div class="btn-group">
-            <div class="btn">Live Demo</div>
-            <div class="btn">Github Repo</div>
+            <a href="#" class="btn">Live Demo</a>
+            <a href="#" class="btn">GitHub Repo</a>
           </div>
         </div>
 
         <div class="project-card">
-          <img src="project3.png" alt="" />
+          <img src="project3.png" alt="Project 3" />
           <h3>Project 3</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
             quod.
           </p>
           <div class="btn-group">
-            <div class="btn">Live Demo</div>
-            <div class="btn">Github Repo</div>
+            <a href="#" class="btn">Live Demo</a>
+            <a href="#" class="btn">GitHub Repo</a>
           </div>
         </div>
       </div>
     </section>
 
-    <sections id="conctact" id="contact">
+    <section id="contact" class="contact">
       <div class="input-box">
         <h2 class="section-title">Contact Me</h2>
-
+        
         <div class="input">
-          <input type="text" placeholder="cristianf.laurentiu@gmail.com" />
+          <input type="text" placeholder="Name" />
+          <i class="fa-solid fa-user"></i>
+        </div>
+    
+        <div class="input">
+          <input type="email" placeholder="Email" />
           <i class="fa-solid fa-envelope"></i>
         </div>
-
-        <div class="btn">Submit</div>
+    
+        <button type="submit" class="btn">Submit</button>
       </div>
-    </sections>
+    </section>
 
     <footer>
       <ul>
-        <li>
-          <a href="#about">About</a>
-        </li>
-
-        <li>
-          <a href="#experience">Experience</a>
-        </li>
-
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-
-        <li>
-          <a href="#contact">Conctact</a>
-        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-
-      <p class="copyright">
-        &copy; All rights reserved | Cristian Florea 2025
-      </p>
+      <p class="copyright">&copy; All rights reserved | Cristian Florea 2025</p>
     </footer>
 
     <script src="script.js"></script>
