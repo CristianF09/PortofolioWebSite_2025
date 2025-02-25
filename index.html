@@ -3,224 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-  </head>
-  <body>
-    <!-- Header Section -->
-    <header class="header">
-      <a href="#" class="logo"><span>Cristian Florea</span></a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <i class="fa-solid fa-bars" id="menu-icon"></i>
-      <a
-        href="https://github.com/yourusername"
-        class="visit-btn"
-        target="_blank"
-        >Visit GitHub</a
-      >
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="about-container">
-        <img src="assets/profile2.png" alt="Profile Picture" />
-        <div class="info-box">
-          <div class="text">
-            <h3>Hi, I'm</h3>
-            <h1>Cristian Florea</h1>
-            <h2>Full Stack Developer</h2>
-          </div>
-          <div class="btn-group">
-            <a href="assets/CV_2025_CF.pdf" class="btn" download>Download CV</a>
-            <a href="#contact" class="btn">Contact Me</a>
-          </div>
-          <div class="social">
-            <a
-              href="https://github.com/yourusername"
-              target="_blank"
-              aria-label="GitHub"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/florea-cristian-laurentiu-18746b151"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-      <h2 class="section-title">Experience</h2>
-      <div class="experience-info">
-        <div class="grid">
-          <div class="grid-card">
-            <i class="fa-solid fa-code"></i>
-            <span>Frontend Developer</span>
-            <h3>5 Years</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quod.
-            </p>
-          </div>
-          <div class="grid-card">
-            <i class="fa-solid fa-file-code"></i>
-            <span>Graphics Designer</span>
-            <h3>2 Years</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quod.
-            </p>
-          </div>
-          <div class="grid-card">
-            <i class="fa-solid fa-laptop"></i>
-            <span>System Admin</span>
-            <h3>3 Years</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quod.
-            </p>
-          </div>
-          <div class="grid-card">
-            <i class="fa-solid fa-list"></i>
-            <span>Manager</span>
-            <h3>5 Years</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quod.
-            </p>
-          </div>
-        </div>
-        <img src="assets/profile1.png" alt="Experience Image" />
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="assets/Project1.webp" alt="Project 1" />
-          <h3>Project 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quod.
-          </p>
-          <div class="btn-group">
-            <a href="#" class="btn">Live Demo</a>
-            <a href="#" class="btn">GitHub Repo</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="assets/Project2.webp" alt="Project 2" />
-          <h3>Project 2</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quod.
-          </p>
-          <div class="btn-group">
-            <a href="#" class="btn">Live Demo</a>
-            <a href="#" class="btn">GitHub Repo</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="assets/Project3.webp" alt="Project 3" />
-          <h3>Project 3</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quod.
-          </p>
-          <div class="btn-group">
-            <a href="#" class="btn">Live Demo</a>
-            <a href="#" class="btn">GitHub Repo</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <form
-        action="https://api.web3forms.com/submit"
-        method="POST"
-        class="contact-form"
-      >
-        <div class="contact-form-title">
-          <h2>Get in touch</h2>
-          <hr />
-        </div>
-        <input
-          type="hidden"
-          name="access_key"
-          value="beca408e-34fe-4156-aa89-39207321ab6b"
-        />
-        <div class="input-group">
-          <div class="input-wrapper">
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              class="contact-input"
-              required
-            />
-            <i class="fa-solid fa-user"></i>
-          </div>
-          <div class="input-wrapper">
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              class="contact-input"
-              required
-            />
-            <i class="fa-solid fa-envelope"></i>
-          </div>
-        </div>
-        <div class="textarea-wrapper">
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            class="contact-input"
-            required
-          ></textarea>
-        </div>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <p class="copyright">&copy; All rights reserved | Cristian Florea 2025</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
-</html>
-a<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cristian Florea - Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -336,10 +118,7 @@ a<!doctype html>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
             quod.
           </p>
-          <div class="btn-group">
-            <a href="#" class="btn">Live Demo</a>
-            <a href="#" class="btn">GitHub Repo</a>
-          </div>
+          <button class="btn">Live Demo</button>
         </div>
         <div class="project-card">
           <img src="assets/Project2.webp" alt="Project 2" />
@@ -348,10 +127,7 @@ a<!doctype html>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
             quod.
           </p>
-          <div class="btn-group">
-            <a href="#" class="btn">Live Demo</a>
-            <a href="#" class="btn">GitHub Repo</a>
-          </div>
+          <button class="btn">Live Demo</button>
         </div>
         <div class="project-card">
           <img src="assets/Project3.webp" alt="Project 3" />
@@ -360,46 +136,7 @@ a<!doctype html>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
             quod.
           </p>
-          <div class="btn-group">
-            <a href="#" class="btn">Live Demo</a>
-            <a href="#" class="btn">GitHub Repo</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="assets/Project1.webp" alt="Project 1" />
-          <h3>Project 4</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quod.
-          </p>
-          <div class="btn-group">
-            <a href="#" class="btn">Live Demo</a>
-            <a href="#" class="btn">GitHub Repo</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="assets/Project2.webp" alt="Project 2" />
-          <h3>Project 5</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quod.
-          </p>
-          <div class="btn-group">
-            <a href="#" class="btn">Live Demo</a>
-            <a href="#" class="btn">GitHub Repo</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="assets/Project3.webp" alt="Project 3" />
-          <h3>Project 6</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quod.
-          </p>
-          <div class="btn-group">
-            <a href="#" class="btn">Live Demo</a>
-            <a href="#" class="btn">GitHub Repo</a>
-          </div>
+          <button class="btn">Live Demo</button>
         </div>
       </div>
     </section>
@@ -418,7 +155,7 @@ a<!doctype html>
           value="beca408e-34fe-4156-aa89-39207321ab6b"
         />
         <div class="contact-form-title">
-          <h2>Get in touch</h2>
+          <h2 class="section-title">Get in touch</h2>
           <hr />
         </div>
         <div class="input-group">
@@ -470,6 +207,7 @@ a<!doctype html>
       <p class="copyright">&copy; All rights reserved | Cristian Florea 2025</p>
     </footer>
 
+    <!-- JavaScript File -->
     <script src="script.js"></script>
   </body>
 </html>
