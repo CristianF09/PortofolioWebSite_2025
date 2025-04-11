@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,11 +17,16 @@
     />
   </head>
   <body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle">
+      <i class="fa-solid fa-sun"></i>
+    </button>
+
     <!-- Header Section -->
     <header class="header">
-      <a href="#" class="logo"><span>Cristian Florea</span></a>
+      <a href="#home" class="logo"><span>Cristian Florea</span></a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
+        <li><a href="#about-bio">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -35,8 +40,8 @@
       >
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Home Section -->
+    <section id="home" class="about">
       <h2 class="section-title" style="display: none">About Me</h2>
       <div class="about-container">
         <img src="assets/profile2.png" alt="Profile Picture" />
@@ -63,6 +68,104 @@
             >
               <i class="fa-brands fa-linkedin"></i>
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Bio Section -->
+    <section id="about-bio" class="about-bio">
+      <h2 class="section-title">About Me</h2>
+      <div class="bio-content">
+        <p>
+          I am a passionate and detail-oriented Junior Full Stack Developer with
+          a strong foundation in modern web technologies and a relentless drive
+          to create impactful, user-centric applications. My journey into
+          development has been fueled by an innate curiosity for solving complex
+          problems, optimizing workflows, and building scalable solutions that
+          deliver real-world value.
+        </p>
+        <p>
+          With hands-on experience in both frontend and backend development, I
+          excel at transforming ideas into functional, efficient, and visually
+          appealing web applications. My skill set includes HTML, CSS,
+          JavaScript, React.js, Node.js, MongoDB, and other cutting-edge tools,
+          enabling me to craft seamless digital experiences. Beyond coding, I
+          bring a solid understanding of information security, data protection,
+          and system troubleshooting, ensuring that every project I work on is
+          not only innovative but also secure and reliable.
+        </p>
+        <p>
+          What sets me apart is my ability to adapt quickly to new challenges
+          and environments. Whether it's collaborating with cross-functional
+          teams, contributing to open-source projects, or diving into emerging
+          technologies, I thrive in dynamic settings where continuous learning
+          and growth are prioritized. My approach combines technical expertise,
+          creativity, and a commitment to delivering high-quality results that
+          align with business goals.
+        </p>
+        <p>Let's connect and create something amazing together! 🚀</p>
+      </div>
+
+      <!-- Tech Stack Section -->
+      <div class="tech-stack">
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="tech-icons">
+          <div class="tech-item">
+            <i class="fab fa-html5"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="tech-item">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="tech-item">
+            <i class="fab fa-js"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-item">
+            <i class="fab fa-react"></i>
+            <span>React</span>
+          </div>
+          <div class="tech-item">
+            <i class="fab fa-vuejs"></i>
+            <span>Vue.js</span>
+          </div>
+          <div class="tech-item">
+            <i class="fab fa-node-js"></i>
+            <span>Node.js</span>
+          </div>
+          <div class="tech-item">
+            <i class="fas fa-database"></i>
+            <span>MongoDB</span>
+          </div>
+          <div class="tech-item">
+            <i class="fab fa-bootstrap"></i>
+            <span>Bootstrap</span>
+          </div>
+          <div class="tech-item">
+            <i class="fab fa-npm"></i>
+            <span>NPM</span>
+          </div>
+          <div class="tech-item">
+            <i class="fab fa-figma"></i>
+            <span>Figma</span>
+          </div>
+          <div class="tech-item">
+            <i class="fas fa-code"></i>
+            <span>VS Code</span>
+          </div>
+          <div class="tech-item">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </div>
+          <div class="tech-item">
+            <i class="fab fa-linux"></i>
+            <span>Linux</span>
+          </div>
+          <div class="tech-item">
+            <i class="fab fa-debian"></i>
+            <span>Debian</span>
           </div>
         </div>
       </div>
@@ -195,7 +298,11 @@
             required
           ></textarea>
         </div>
-        <button type="submit" class="btn">Send Message</button>
+        <div style="text-align: center; margin-top: 2rem">
+          <button type="submit" class="btn" style="padding: 1rem 2rem">
+            Send Message
+          </button>
+        </div>
         <div
           id="result"
           style="margin-top: 1rem; color: #009dff; font-weight: bold"
@@ -206,7 +313,8 @@
     <!-- Footer Section -->
     <footer>
       <ul>
-        <li><a href="#about">About</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-bio">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
