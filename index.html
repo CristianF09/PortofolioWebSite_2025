@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cristian Florea - Portfolio Website</title>
+    <title>Cristian Florea - Cristian Florea | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -31,6 +37,7 @@
 
     <!-- About Section -->
     <section id="about" class="about">
+      <h2 class="section-title" style="display: none">About Me</h2>
       <div class="about-container">
         <img src="assets/profile2.png" alt="Profile Picture" />
         <div class="info-box">
@@ -50,7 +57,7 @@
               <i class="fa-brands fa-github"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/florea-cristian-laurentiu-18746b151"
+              href="https://linkedin.com/in/yourusername"
               target="_blank"
               aria-label="LinkedIn"
             >
@@ -71,35 +78,35 @@
             <span>Frontend Developer</span>
             <h3>5 Years</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quod.
+              Specialized in creating responsive and interactive user interfaces
+              using modern frameworks and libraries.
             </p>
           </div>
           <div class="grid-card">
             <i class="fa-solid fa-file-code"></i>
-            <span>Graphics Designer</span>
-            <h3>2 Years</h3>
+            <span>Backend Developer</span>
+            <h3>3 Years</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quod.
+              Developed robust server-side applications and RESTful APIs using
+              various technologies and databases.
             </p>
           </div>
           <div class="grid-card">
             <i class="fa-solid fa-laptop"></i>
-            <span>System Admin</span>
-            <h3>3 Years</h3>
+            <span>Full Stack Developer</span>
+            <h3>2 Years</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quod.
+              End-to-end development of web applications, handling both frontend
+              and backend aspects of projects.
             </p>
           </div>
           <div class="grid-card">
-            <i class="fa-solid fa-list"></i>
-            <span>Manager</span>
-            <h3>5 Years</h3>
+            <i class="fa-solid fa-mobile-screen"></i>
+            <span>Mobile Developer</span>
+            <h3>1 Year</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quod.
+              Created cross-platform mobile applications using React Native and
+              other modern frameworks.
             </p>
           </div>
         </div>
@@ -113,28 +120,28 @@
       <div class="projects-grid">
         <div class="project-card">
           <img src="assets/Project1.webp" alt="Project 1" />
-          <h3>Project 1</h3>
+          <h3>E-Commerce Platform</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quod.
+            A full-featured e-commerce platform with product catalog, shopping
+            cart, and secure payment processing.
           </p>
           <button class="btn">Live Demo</button>
         </div>
         <div class="project-card">
           <img src="assets/Project2.webp" alt="Project 2" />
-          <h3>Project 2</h3>
+          <h3>Task Management App</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quod.
+            A collaborative task management application with real-time updates
+            and team collaboration features.
           </p>
           <button class="btn">Live Demo</button>
         </div>
         <div class="project-card">
           <img src="assets/Project3.webp" alt="Project 3" />
-          <h3>Project 3</h3>
+          <h3>Portfolio Website</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quod.
+            A responsive portfolio website showcasing my skills, projects, and
+            professional experience.
           </p>
           <button class="btn">Live Demo</button>
         </div>
@@ -143,23 +150,23 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
+      <h2 class="section-title">Contact Me</h2>
       <form
         action="https://api.web3forms.com/submit"
         method="POST"
-        id="form"
         class="contact-form"
       >
-        <input
-          type="hidden"
-          name="access_key"
-          value="beca408e-34fe-4156-aa89-39207321ab6b"
-        />
         <div class="contact-form-title">
-          <h2 class="section-title">Get in touch</h2>
+          <h2>Get in touch</h2>
           <hr />
         </div>
         <div class="input-group">
           <div class="input-wrapper">
+            <input
+              type="hidden"
+              name="access_key"
+              value="beca408e-34fe-4156-aa89-39207321ab6b"
+            />
             <input
               type="text"
               name="name"

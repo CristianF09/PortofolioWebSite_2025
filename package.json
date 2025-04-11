@@ -1,27 +1,22 @@
 {
-  "name": "portofoliowebsite_2025",
+  "name": "portfolio-website-2025-inner",
   "version": "1.0.0",
-  "description": "My personal portfolio website showcasing my skills and projects as a developer.",
-  "main": "script.js",
+  "description": "Cristian Florea's Portfolio Website",
+  "main": "index.js",
   "scripts": {
-    "start": "live-server",
-    "lint": "eslint . --ext .js,.jsx",
-    "format": "prettier --write ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CristianF09/PortofolioWebSite_2025.git"
+    "start": "npx serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "portfolio",
-    "website",
-    "developer"
+    "web",
+    "developer",
+    "frontend",
+    "backend"
   ],
   "author": "Cristian Florea",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint": "^8.56.0",
-    "live-server": "^1.2.2",
-    "prettier": "^3.0.3"
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^14.2.1"
   }
 }
