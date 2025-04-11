@@ -451,6 +451,8 @@ section {
   transition: var(--transition);
   background-color: var(--light-color);
   box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
 }
 
 .grid-card:hover {
@@ -483,6 +485,98 @@ section {
 .grid-card p {
   color: var(--text-color);
   opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+
+/* More Button */
+.more-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  border: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+  transition: var(--transition);
+  background: var(--gradient);
+  box-shadow: 0 4px 10px rgba(0, 157, 255, 0.3);
+  margin-top: auto;
+}
+
+.more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 157, 255, 0.4);
+}
+
+/* Experience Modal */
+.experience-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+  transition: var(--transition);
+}
+
+.modal-content {
+  background-color: var(--light-color);
+  margin: 10% auto;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+  box-shadow: var(--box-shadow);
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+[data-theme="dark"] .modal-content {
+  background-color: var(--gray-color);
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-modal {
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.close-modal:hover {
+  color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+.modal-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  background: var(--gradient);
+  background-clip: text;
+  color: transparent;
+}
+
+.modal-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-color);
 }
 
 /* Projects Section */
@@ -749,6 +843,11 @@ footer ul li a:hover::before {
   .tech-item {
     min-width: 70px;
   }
+
+  .modal-content {
+    width: 90%;
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -806,6 +905,15 @@ footer ul li a:hover::before {
 
   .tech-item span {
     font-size: 0.8rem;
+  }
+
+  .modal-content {
+    margin: 15% auto;
+    padding: 1.8rem;
+  }
+
+  .modal-content h2 {
+    font-size: 1.8rem;
   }
 }
 
@@ -894,5 +1002,19 @@ footer ul li a:hover::before {
 
   .tech-item span {
     font-size: 0.7rem;
+  }
+
+  .modal-content {
+    margin: 20% auto;
+    padding: 1.5rem;
+    width: 95%;
+  }
+
+  .modal-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-content p {
+    font-size: 1rem;
   }
 }

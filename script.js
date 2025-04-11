@@ -3,44 +3,45 @@ const navLinks = document.querySelector(".nav-links");
 
 menuIcon.addEventListener("click", () => {
   navLinks.classList.toggle("active");
-  menuIcon.classList.toggle("fa-xmark");
+  menuIcon.classList.toggle("bx-x");
 });
 
-// Close mobile menu when clicking on a link
-document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", () => {
+// Close mobile menu when clicking outside
+document.addEventListener("click", (e) => {
+  if (!navLinks.contains(e.target) && !menuIcon.contains(e.target)) {
     navLinks.classList.remove("active");
-    menuIcon.classList.remove("fa-xmark");
-  });
+    menuIcon.classList.remove("bx-x");
+  }
 });
 
-// Theme Toggle Functionality
-const themeToggle = document.getElementById("theme-toggle");
-const themeIcon = themeToggle.querySelector("i");
+// Theme Toggle
+const themeToggle = document.querySelector(".theme-toggle");
+const body = document.body;
 
-// Check for saved theme preference or use the default
-const savedTheme = localStorage.getItem("theme") || "light";
-document.documentElement.setAttribute("data-theme", savedTheme);
-updateThemeIcon(savedTheme);
+// Check for saved theme preference
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+  body.setAttribute("data-theme", savedTheme);
+  updateThemeIcon(savedTheme);
+}
 
-// Toggle theme when button is clicked
+// Toggle theme on button click
 themeToggle.addEventListener("click", () => {
-  const currentTheme = document.documentElement.getAttribute("data-theme");
-  const newTheme = currentTheme === "light" ? "dark" : "light";
+  const currentTheme = body.getAttribute("data-theme");
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
   
-  document.documentElement.setAttribute("data-theme", newTheme);
+  body.setAttribute("data-theme", newTheme);
   localStorage.setItem("theme", newTheme);
   updateThemeIcon(newTheme);
 });
 
-// Update the theme icon based on the current theme
+// Update theme icon based on current theme
 function updateThemeIcon(theme) {
-  if (theme === "light") {
-    themeIcon.classList.remove("fa-moon");
-    themeIcon.classList.add("fa-sun");
+  const icon = themeToggle.querySelector("i");
+  if (theme === "dark") {
+    icon.className = "fas fa-sun";
   } else {
-    themeIcon.classList.remove("fa-sun");
-    themeIcon.classList.add("fa-moon");
+    icon.className = "fas fa-moon";
   }
 }
 
@@ -78,4 +79,50 @@ form.addEventListener("submit", (e) => {
   setTimeout(() => {
     result.textContent = "";
   }, 3000);
+});
+
+// Experience Section Modals
+const moreButtons = document.querySelectorAll(".more-btn");
+const modals = document.querySelectorAll(".experience-modal");
+const closeButtons = document.querySelectorAll(".close-modal");
+
+// Open modal when "More" button is clicked
+moreButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const targetId = button.getAttribute("data-target");
+    const modal = document.getElementById(targetId);
+    modal.style.display = "block";
+    document.body.style.overflow = "hidden"; // Prevent scrolling when modal is open
+  });
+});
+
+// Close modal when close button is clicked
+closeButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const modal = button.closest(".experience-modal");
+    modal.style.display = "none";
+    document.body.style.overflow = "auto"; // Re-enable scrolling
+  });
+});
+
+// Close modal when clicking outside the modal content
+window.addEventListener("click", (e) => {
+  modals.forEach(modal => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto"; // Re-enable scrolling
+    }
+  });
+});
+
+// Close modal with Escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    modals.forEach(modal => {
+      if (modal.style.display === "block") {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto"; // Re-enable scrolling
+      }
+    });
+  }
 });
